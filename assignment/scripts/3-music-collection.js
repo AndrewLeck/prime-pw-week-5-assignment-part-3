@@ -60,12 +60,11 @@ showCollection(collection);
 let results =[];
 function findByArtist(artist){
   for(let i=0; i <= collection.length-1; i++){
-    if(collection[i].artist === collection[i].artist){
+    if(collection[i].artist === artist){
       results.push(collection[i].artist);
-        return results;
     }
-        return false;
   }
+  return results;
 }
 //Testing
 findByArtist('Kanye');
@@ -73,7 +72,7 @@ findByArtist('Taylor Swift');
 findByArtist('John doe');
 findByArtist('John doe');
 findByArtist('John doe');
-findByArtist('John doe');
+findByArtist('XXXTENTACION');
 
 
 console.log(results);
